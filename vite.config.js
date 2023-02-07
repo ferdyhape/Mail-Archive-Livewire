@@ -16,6 +16,7 @@ export default defineConfig({
                 'public/**',
                 'app/Http/**',
                 'app/Models/**',
+                'routes/**',
             ],
         }),
 
