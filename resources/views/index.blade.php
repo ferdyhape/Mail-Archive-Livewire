@@ -3,9 +3,10 @@
 <div class="container py-4">
     <div class="row justify-content-center">
         @if (Auth::check())
-        {{-- if auth exe here --}}
+        <h2>Hello World</h2>
+        @livewire('auth.logout')
         @else
-        @livewire('login')
+        @livewire('auth.login')
         @endif
     </div>
 </div>
