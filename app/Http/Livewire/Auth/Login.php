@@ -19,7 +19,7 @@ class Login extends Component
 
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password])) {
 
-            return redirect()->route('index');
+            return redirect()->route('index')->with('toast_success', 'Login Successfull');
         } else {
             session()->flash('error', 'Alamat Email atau Password Anda salah!.');
             return redirect()->route('index');
