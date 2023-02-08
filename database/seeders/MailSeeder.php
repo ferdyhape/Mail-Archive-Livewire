@@ -16,7 +16,7 @@ class MailSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 1; $i <= 100; $i++) {
+        for ($i = 1; $i <= 8; $i++) {
             Mail::create([
                 'mail_number' => 'A/B/' . $i,
                 'name' => 'Surat Coba-' . $i,

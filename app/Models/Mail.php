@@ -13,6 +13,7 @@ class Mail extends Model
         'mail_number',
         'name',
         'category_id',
+        'activity_id',
         'archive_time',
         'file',
     ];
