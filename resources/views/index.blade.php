@@ -5,9 +5,11 @@
 
         @if (Auth::check())
         <h2>Mail Archive</h2>
-        @livewire('dashboard.menu')
+        <div class="d-flex justify-content-between">
+            @livewire('dashboard.menu')
+            @livewire('auth.logout')
+        </div>
         @livewire('dashboard.table')
-        @livewire('auth.logout')
 
         @else
         @livewire('auth.login')
@@ -15,4 +17,9 @@
 
     </div>
 </div>
+<style>
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+</style>
 @endsection
