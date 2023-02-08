@@ -2,20 +2,18 @@
 <html lang="en">
 
 <head>
+    <!-- Head -->
     @include('layouts.head')
 </head>
 
 <body>
 
-    {{-- content --}}
+    <!-- Content -->
     @yield('content')
-    {{-- end of content --}}
 
-
-    {{-- script --}}
+    <!-- Script -->
     @include('layouts.script')
-    @livewireScripts
-    {{-- end of script --}}
+
 </body>
 
 </html>
