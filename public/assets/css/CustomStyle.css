@@ -1,1 +1,18 @@
+.modalShow>div>div>div.modal-body {
+    height: 450px;
+    width: 100%;
+    padding: 0 20px;
+}
 
+.modal-content {
+    padding: 0 20px;
+}
+
+.modal-body {
+    background-color: dde6f2 !important;
+}
+
+.modalShow>div>div>div.modal-body>iframe {
+    height: 90%;
+    width: 100%;
+}

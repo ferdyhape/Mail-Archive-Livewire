@@ -6,7 +6,7 @@
         @if (Auth::check())
         <h2>Mail Archive</h2>
         <div class="d-flex justify-content-between">
-            @livewire('dashboard.menu')
+            @livewire('dashboard.archive.create')
             @livewire('auth.logout')
         </div>
         @livewire('dashboard.table')
