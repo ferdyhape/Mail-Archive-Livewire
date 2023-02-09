@@ -1,10 +1,10 @@
 <div>
     <button wire:click="deleteId({{$mail->id}})" class="btn btn-danger" data-bs-toggle="modal"
-        data-bs-target="#modalDelete">
+        data-bs-target="#delete-archive-modal-{{$mail->id}}">
         <i class="fa-solid fa-trash"></i>
     </button>
 
-    <div wire:ignore.self class="modal fade" id="modalDelete" tabindex="-1" role="dialog"
+    <div wire:ignore.self class="modal fade" id="delete-archive-modal-{{$mail->id}}" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
