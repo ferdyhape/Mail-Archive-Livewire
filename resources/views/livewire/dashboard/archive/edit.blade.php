@@ -1,9 +1,9 @@
 <div>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModal-{{$mail->id}}"><i
-            class="fa-solid fa-pen-to-square"></i></button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+        data-bs-target="#edit-archive-modal-{{$mail->id}}"><i class="fa-solid fa-pen-to-square"></i></button>
 
     <!-- Modal -->
-    <div class="modal fade" wire:ignore.self id="editModal-{{$mail->id}}" tabindex="-1" role="dialog"
+    <div class="modal fade" wire:ignore.self id="edit-archive-modal-{{$mail->id}}" tabindex="-1" role="dialog"
         aria-labelledby="modalTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
