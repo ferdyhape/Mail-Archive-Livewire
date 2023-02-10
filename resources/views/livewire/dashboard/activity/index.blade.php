@@ -1,4 +1,4 @@
-<div class="container m-3">
+<div>
     @livewire('dashboard.activity.create')
     @livewire('dashboard.activity.table')
 </div>

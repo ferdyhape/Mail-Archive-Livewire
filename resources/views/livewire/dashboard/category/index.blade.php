@@ -1,4 +1,4 @@
-<div class="container m-3">
+<div>
     @livewire('dashboard.category.create')
     @livewire('dashboard.category.table')
 </div>
