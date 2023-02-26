@@ -34,7 +34,7 @@ class Edit extends Component
 
         session()->flash('toast_success', 'Data Berhasil Diupdate.');
 
-        return redirect()->route('index');
+        return redirect()->route('index.dashboard.archive');
     }
 
     public function render()
