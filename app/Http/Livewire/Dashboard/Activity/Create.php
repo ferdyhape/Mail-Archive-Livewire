@@ -16,9 +16,7 @@ class Create extends Component
         ]);
         Activity::create($data);
 
-        session()->flash('toast_success', 'Data Berhasil Disimpan.');
-
-        return redirect()->route('index');
+        return redirect()->route('index.dashboard.activity')->with('toast_success', 'Data Berhasil Disimpan.');
     }
     public function render()
     {
