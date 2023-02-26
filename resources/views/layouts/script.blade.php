@@ -6,9 +6,9 @@
 
 <!-- Script for display table -->
 <script>
-    $(document).ready( function () {
-    $('#mail_table').DataTable();
-    } );
+    $(document).ready(function() {
+        $('#mail_table').DataTable();
+    });
     window.$('#mail_table').DataTable();
 </script>
 
@@ -27,3 +27,84 @@
 
 <!-- Livewire -->
 @livewireScripts
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+    integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
+</script>
+<script src="{{ asset('assets/dashboard/js/dashboard.js') }}"></script>
+<script>
+    var archive = document.getElementById("archive-display");
+    var category = document.getElementById("category-display");
+    var activity = document.getElementById("activity-display");
+    var display = [archive, category, activity]
+
+    var req = {{ $request }};
+    for (var i = 0; i < display.length; i++) {
+        if (display[i] === req) {
+            display[i].style.display = "block"
+        } else {
+            display[i].style.display = "none"
+        }
+    }
+
+    function archiveshow() {
+        for (var i = 0; i < display.length; i++) {
+            if (display[i] == archive) {
+                display[i].style.display = "block"
+            } else {
+                display[i].style.display = "none"
+            }
+        }
+    }
+
+    function categoryshow() {
+        for (var i = 0; i < display.length; i++) {
+            if (display[i] == category) {
+                display[i].style.display = "block"
+            } else {
+                display[i].style.display = "none"
+            }
+        }
+    }
+
+    function activityshow() {
+        for (var i = 0; i < display.length; i++) {
+            if (display[i] == activity) {
+                display[i].style.display = "block"
+            } else {
+                display[i].style.display = "none"
+            }
+        }
+    }
+
+    {{--  defaultProcess();
+
+    function defaultProcess() {
+        for (var i = 0; i < display.length; i++) {
+            if (display[i] == display) {
+                display[i].style.display = "block"
+            } else {
+                display[i].style.display = "none"
+            }
+        }
+    }
+
+
+    var request = {{ $request }};
+    if (request === archive) {
+        archiveshow();
+    } else if (request === category) {
+        categoryshow();
+    } else if (request === activity) {
+        activityshow();
+    } else {
+        defaultProcess();
+    }
+
+      --}}
+</script>
+
+<script></script>

@@ -1,3 +1,3 @@
 <div>
-    <button class="btn btn-primary" wire:click="logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+    <a class="dropdown-item" wire:click="logout">Sign out</a>
 </div>
