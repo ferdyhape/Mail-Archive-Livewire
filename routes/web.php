@@ -14,5 +14,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
-})->name('index');
+    return view('index', [
+        'request' => 'dashboard'
+    ]);
+})->name('index.dashboard');
+
+Route::get('/archive', function () {
+    return view('index', [
+        'request' => 'archive'
+    ]);
+})->name('index.dashboard.archive');
+
+Route::get('/category', function () {
+    return view('index', [
+        'request' => 'category'
+    ]);
+})->name('index.dashboard.category');
+
+Route::get('/activity', function () {
+    return view('index', [
+        'request' => 'activity'
+    ]);
+})->name('index.dashboard.activity');
