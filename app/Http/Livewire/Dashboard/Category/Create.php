@@ -18,7 +18,7 @@ class Create extends Component
 
         session()->flash('toast_success', 'Data Berhasil Disimpan.');
 
-        return redirect()->route('index');
+        return redirect()->route('index.dashboard.category');
     }
     public function render()
     {
